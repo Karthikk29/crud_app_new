@@ -18,7 +18,7 @@ services:
 
   # Backend API (using Docker Hub image)
   backend:
-    image: YOUR_DOCKERHUB_USERNAME/mean-app-backend:latest
+    image: karthikkotharkar/mean-app-backend:latest
     container_name: mean-backend
     restart: unless-stopped
     environment:
@@ -31,7 +31,7 @@ services:
 
   # Frontend Angular App (using Docker Hub image)
   frontend:
-    image: YOUR_DOCKERHUB_USERNAME/mean-app-frontend:latest
+    image: karthikkotharkar/mean-app-frontend:latest
     container_name: mean-frontend
     restart: unless-stopped
     depends_on:
