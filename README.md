@@ -88,16 +88,18 @@ Any push to the `main` branch will automatically trigger the pipeline.
 ## Screenshots
 
 ### 1. CI/CD Configuration and Execution
-*(Place screenshot of GitHub Actions workflow run here)*
+![CI/CD Workflow Run](images/cicd-workflow.png)
 
 ### 2. Docker Image Build and Push
-*(Place screenshot of Docker Hub repositories showing pushed images here)*
+![Docker Hub Repositories](images/dockerhub-images.png)
 
 ### 3. Application Deployment and Working UI
-*(Place screenshot of the running application in the browser here)*
+![Running Application Screenshot](images/ui1.png)
+![Running Application Screenshot](images/ui2.png)
+![Running Application Screenshot](images/ui3.png)
 
 ### 4. Nginx Setup and Infrastructure
-*(Place screenshot of `docker ps` output on EC2 or Nginx config file here)*
+![Nginx / Docker PS Output](images/nginx-dockerps.png)
 
 ## License
 
