@@ -44,6 +44,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/crud-dd-task-mean-app
+            git pull origin main
             docker pull ${{ secrets.DOCKER_USERNAME }}/mean-app-backend:latest
             docker pull ${{ secrets.DOCKER_USERNAME }}/mean-app-frontend:latest
             docker-compose down
