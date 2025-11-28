@@ -1,6 +1,3 @@
-# For production deployment with Docker Hub images
-# Replace YOUR_DOCKERHUB_USERNAME with your actual Docker Hub username
-
 version: '3.8'
 
 services:
@@ -16,7 +13,7 @@ services:
     networks:
       - mean-network
 
-  # Backend API (using Docker Hub image)
+  # Backend API
   backend:
     image: karthikkotharkar/mean-app-backend:latest
     container_name: mean-backend
@@ -29,7 +26,7 @@ services:
     networks:
       - mean-network
 
-  # Frontend Angular App (using Docker Hub image)
+  # Frontend Angular App
   frontend:
     image: karthikkotharkar/mean-app-frontend:latest
     container_name: mean-frontend
