@@ -91,7 +91,7 @@ Any push to the `main` branch will automatically trigger the pipeline.
 ![CI/CD Workflow Run](images/cicd-workflow.png)
 
 ### 2. Docker Image Build and Push
-![Docker Hub Repositories](images/dockerhub-images.png)
+![Docker Hub Repositories](images/dockerhub.png)
 
 ### 3. Application Deployment and Working UI
 ![Running Application Screenshot](images/ui1.png)
