@@ -43,6 +43,9 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            if [ ! -d "crud-dd-task-mean-app" ]; then
+              git clone https://github.com/Karthikk29/crud_app_new.git crud-dd-task-mean-app
+            fi
             cd ~/crud-dd-task-mean-app
             git pull origin main
             docker pull ${{ secrets.DOCKER_USERNAME }}/mean-app-backend:latest
